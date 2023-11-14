@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,8 +36,11 @@
 		
 		
 			<h2>我的购物车</h2>
-
-			<%--由于只在添加good进购物车的时候才会读数据库所以要添加东西进购物车的时候购物车才会显示此前的good，待改进--%>
+			<%
+				String contextPath = pageContext.request.contextPath;
+				out.println("Context Path: " + contextPath);
+			%>
+		<%--由于只在添加good进购物车的时候才会读数据库所以要添加东西进购物车的时候购物车才会显示此前的good，待改进--%>
 			<c:forEach items="${order.itemMap }" var="item">
 				<div class="cart-header col-md-6">
 					<div class="cart-sec simpleCart_shelfItem">

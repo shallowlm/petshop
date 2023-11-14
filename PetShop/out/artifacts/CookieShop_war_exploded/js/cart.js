@@ -16,20 +16,6 @@ function buy(goodid){
 
             });
 		}
-		/*if(data=="ok"){
-			layer.msg("操作成功!", {time:800}, function(){
-				location.reload();
-			});
-		}else if(data=="login"){
-			alert("请登录后购买!");
-			location.href="login.jsp";
-		}else if(data=="empty"){
-			alert("库存不足!");
-			location.reload();
-		}else{
-			alert("请求失败!");
-		}*/
-
 	});
 }
 
@@ -40,16 +26,6 @@ function lessen(goodsid){
                 location.reload();
             });
         }
-//		if(data=="ok"){
-//			layer.msg("操作成功!", {time:800}, function(){
-//				location.href="cart.action";
-//			});
-//		}else if(data=="login"){
-//			alert("请登录后操作!");
-//			location.href="login.jsp";
-//		}else{
-//			alert("请求失败!");
-//		}
     });
 }
 /**
